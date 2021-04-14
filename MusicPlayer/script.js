@@ -23,14 +23,14 @@ $(function()
 	var songs = [{
 		artist: "Dig Didzay",
 		name: "Nếu Anh Đi (Cover)",
-		url: ("Musics/NeuAnhDi.mp3"),
-		picture: "./Background/040A9911.JPG"
+		url: ("MusicPlayer/Musics/NeuAnhDi.mp3"),
+		picture: "./MusicPlayer./Background/040A9911.JPG"
 	},
     {
 		artist: "nothing",
 		name: "tau",
-		url: ("./Musics/1.mp3"),
-		picture: "./Background/040A9911.JPG"
+		url: ("MusicPlayer/Musics/1.mp3"),
+		picture: "./MusicPlayer./Background/040A9911.JPG"
     }
 ];
 	
@@ -197,15 +197,16 @@ $(function()
             ++currIndex;
         else
             --currIndex;
-
+        
+            if(currIndex >= songs.length) currIndex = 0;
         if( (currIndex > -1) && (currIndex < songs.length) )
         {
             if( flag == 0 )
                 i.attr('class','fa fa-play');
             else
             {
-                albumArt.removeClass('buffering');
-                i.attr('class','fa fa-pause');
+                albumArt.removeClass('buffering'); //buffering
+                i.attr('class','fa fa-pause'); //fa fa-pause
             }
 
             seekBar.width(0);
@@ -252,7 +253,7 @@ $(function()
 
 		selectTrack(0);
 		
-		audio.loop = true;
+		audio.loop = false;
 		
 		playPauseButton.on('click',playPause);
 		
