@@ -23,13 +23,37 @@ $(function()
 	var songs = [{
 		artist: "Dig Didzay",
 		name: "Nếu Anh Đi (Cover)",
-		url: ("MusicPlayer/Musics/NeuAnhDi.mp3"),
+		url: ("./MusicPlayer/Musics/NeuAnhDi.mp3"),
 		picture: "./MusicPlayer./Background/040A9911.JPG"
 	},
     {
 		artist: "nothing",
 		name: "tau",
-		url: ("MusicPlayer/Musics/1.mp3"),
+		url: ("./MusicPlayer/Musics/1.mp3"),
+		picture: "./MusicPlayer./Background/040A9911.JPG"
+    },
+	 {
+		artist: "ngai than",
+		name: "thoi khong sai lech",
+		url: ("./MusicPlayer/Musics/ThoiKhongSaiLech-NgaiThan-6919123.mp3"),
+		picture: "./MusicPlayer./Background/040A9911.JPG"
+    },
+	 {
+		artist: "van chi khap",
+		name: "hoa dia vi lao",
+		url: ("./MusicPlayer/Musics/[Vietsub+pinyin] Họa địa vi lao - Vân Chi Khấp & Diệp Lý - 画地为牢 - 云の泣 & 叶里.mp3"),
+		picture: "./MusicPlayer./Background/040A9911.JPG"
+    },
+	{
+		artist: "tat dinh dinh",
+		name: "tay trai chi trang",
+		url: ("./MusicPlayer/Musics/[Vietsub-Pinyin] Tay Trái Chỉ Trăng - Tát Đỉnh Đỉnh - OST Hương Mật Tựa Khói Sương.mp3"),
+		picture: "./MusicPlayer./Background/040A9911.JPG"
+    },
+	{
+		artist: "tat dinh dinh",
+		name: "tay trai chi trang",
+		url: ("./MusicPlayer/Musics/[Tổng hợp] Một số bài hát cực hay của Châu Thâm.mp3"),
 		picture: "./MusicPlayer./Background/040A9911.JPG"
     }
 ];
